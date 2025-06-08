@@ -1,4 +1,4 @@
-![ZedChat Banner](https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80)
+![ZedChat Banner](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80)
 # ZedChat
 
 ZedChat is a modern chat application built with React and Vite.
