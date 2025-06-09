@@ -9,6 +9,7 @@ const Login = () => {
         <img src={assets.logo_big} alt='' className='logo' />
         <form className="login-form">
           <h2>Sign Up</h2> 
+          <h1>developed by Wazingwa</h1>
           <input type="text" placeholder="username" className="form-input" required />
           <input type="email" placeholder="email" className="form-input" required/>
           <input type="password" placeholder="password" className="form-input" required/>
