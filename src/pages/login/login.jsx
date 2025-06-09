@@ -27,3 +27,8 @@ const Login = () => {
 }
 
 export default Login
+//making all the neede d chages fro the files and from the acts that  i have bee given, grinding from the start till the end
+// wile learning al th
+// we are learning hoe to vo dei i javascrit abyusing this caht app as a bweaking p o our leaning, buildin and scallj this thing from scratch
+//using the resources taht we have been given, and the knowledge that we have gained from the previous lessons
+// this is a chat app that is being built using react and firebase as the backend, making the comments for the code
