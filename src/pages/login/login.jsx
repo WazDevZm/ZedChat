@@ -32,3 +32,7 @@ export default Login
 // we are learning hoe to vo dei i javascrit abyusing this caht app as a bweaking p o our leaning, buildin and scallj this thing from scratch
 //using the resources taht we have been given, and the knowledge that we have gained from the previous lessons
 // this is a chat app that is being built using react and firebase as the backend, making the comments for the code
+// aid some new feature to the app for shiptment int he comng moths and dayas
+// we are deplotung all the code as required so as to feel like people building adn shiiping real prohucts in real timwe are leanig
+// this is a chat app is meant to be simple and add or the feautes that a nirmal app can have to instriduce al the iter factoes that
+// w can have into the syst
