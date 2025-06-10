@@ -12,33 +12,30 @@ const Login = () => {
         <form className="login-form">
           <h2>{currState}</h2> 
           <h1>developed by Wazingwa</h1>
-          {currState  === "Sign Up"? <input type="text" placeholder="username" className="form-input" required />: null}
-          <input type="email" placeholder="email" className="form-input" required/>
-          <input type="password" placeholder="password" className="form-input" required/>
-          <button type="submit">{ currState === "Sign Up"? "Create Account" : "login now"}</button>
+          {currState === "Sign Up" ? <input type="text" placeholder="username" className="form-input" required /> : null}
+          <input type="email" placeholder="email" className="form-input" required />
+          <input type="password" placeholder="password" className="form-input" required />
+          <button type="submit">{currState === "Sign Up" ? "Create Account" : "login now"}</button>
           <div className="login-term">
-            <input type='checkbox' id='terms'/>
+            <input type='checkbox' id='terms' />
             <label htmlFor='terms'>Agree to the terms of use & privacy policy.</label>
           </div>
           <div className='login-forgot'>
-            <p className='login-toggle'>Already have an account? <span onClick={()=> setCurrState("Login")}>Login</span></p>
+            {currState === "Sign Up" && (
+              <p className='login-toggle'>
+                Already have an account? <span onClick={() => setCurrState("Login")}>Login</span>
+              </p>
+            )}
+            {currState === "Login" && (
+              <p className='login-toggle'>
+                Don't have an account? <span onClick={() => setCurrState("Sign Up")}>Sign Up</span>
+              </p>
+            )}
           </div>
         </form>
       </div>
     </div>
   )
 }
-// the alteantive use of the cuurent code in the given frm the given ocde and
-// using ai to enhavce anf prvide the code to be as accuare a poosbile
 
 export default Login
-//making all the neede d chages fro the files and from the acts that  i have bee given, grinding from the start till the end
-// wile learning al th
-// we are learning hoe to vo dei i javascrit abyusing this caht app as a bweaking p o our leaning, buildin and scallj this thing from scratch
-//using the resources taht we have been given, and the knowledge that we have gained from the previous lessons
-// this is a chat app that is being built using react and firebase as the backend, making the comments for the code
-// aid some new feature to the app for shiptment int he comng moths and dayas
-// we are deplotung all the code as required so as to feel like people building adn shiiping real prohucts in real timwe are leanig
-// this is a chat app is meant to be simple and add or the feautes that a nirmal app can have to instriduce al the iter factoes that
-// w can have into the syst
-// we kee buildin ad shiping code rom scrath maninating a very good balnce

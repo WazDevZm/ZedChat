@@ -6,8 +6,9 @@ import "./chat.css"
 // backedn called firebase by googble, making the comments f
 const chat = () => {
   return (
-    <div>
-        we are on the chat page now          
+    <div className='chat'>
+      <div className='chat-container'></div>
+           
     </div>
   )
 }
@@ -15,3 +16,4 @@ const chat = () => {
 export default chat
 // this is why in need a second sccren to se my ode nad the 
 // actual work that I im imomeing by the side, me buildin th next facbook
+// we re blf nex t cht app to beat facebook
