@@ -23,3 +23,4 @@ const Chat = () => {
 
 export default Chat
 // Building the next generation chat application
+// scaling the next generation application from scratch
