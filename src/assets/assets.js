@@ -34,7 +34,7 @@ const assets = {
     menu_icon,
     arrow_icon,
     green_dot,
-    waz.jpg
+    waz
 }
 
 export default assets;

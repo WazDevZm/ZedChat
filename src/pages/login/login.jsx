@@ -1,17 +1,21 @@
 import React, { useState } from 'react'
 import "./login.css"
-import assets from '../../assets/assets'
+//import assets from '../../assets/assets'
 
 const Login = () => {
   // creating a state varvibale
+  
   const [currState, setCurrState] = useState("Sign Up");
   return (
+    
     <div>
+      <div>
+        <h1 className='header'>Welcome to ZedChat</h1>
+      </div>
       <div className='login'>
-        <img src={assets.logo_big} alt='' className='logo' />
+        
         <form className="login-form">
           <h2>{currState}</h2> 
-          <h1>developed by Wazingwa</h1>
           {currState === "Sign Up" ? <input type="text" placeholder="username" className="form-input" required /> : null}
           <input type="email" placeholder="email" className="form-input" required />
           <input type="password" placeholder="password" className="form-input" required />
@@ -34,6 +38,7 @@ const Login = () => {
           </div>
         </form>
       </div>
+      <footer className='footer'>ZedChat is created by Wazingwa Mugala, software engineer @ microsoft</footer>
     </div>
   )
 }
