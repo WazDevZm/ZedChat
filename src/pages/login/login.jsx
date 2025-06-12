@@ -39,3 +39,4 @@ const Login = () => {
 }
 
 export default Login
+// check all the code in the login js file for erroe with the logo, somethin is wrng theree

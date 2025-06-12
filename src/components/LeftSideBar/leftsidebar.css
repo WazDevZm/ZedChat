@@ -1,1 +1,111 @@
+.ls-container {
+  width: 300px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
 
+.ls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ls-top {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.ls-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+}
+
+.menu img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.menu img:hover {
+  opacity: 1;
+}
+
+.ls-search {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 8px 12px;
+  border-radius: 8px;
+  gap: 8px;
+}
+
+.ls-search img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+.ls-search input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #374151;
+}
+
+.ls-search input::placeholder {
+  color: #9ca3af;
+}
+
+.friends {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.friends:hover {
+  background-color: #f3f4f6;
+}
+
+.friends img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.friends div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.friends p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2937;
+  margin: 0;
+}
+
+.friends span {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
