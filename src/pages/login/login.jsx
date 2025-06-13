@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./login.css"
+import assets from '../../assets/assets';
 //import assets from '../../assets/assets'
 
 const Login = () => {
@@ -10,10 +11,10 @@ const Login = () => {
     
     <div>
       <div>
-        <h1 className='header'>Welcome to ZedChat</h1>
+       
       </div>
       <div className='login'>
-        
+        <img src= {assets.logo_big} alt='logo' />
         <form className="login-form">
           <h2>{currState}</h2> 
           {currState === "Sign Up" ? <input type="text" placeholder="username" className="form-input" required /> : null}
@@ -28,7 +29,7 @@ const Login = () => {
             {currState === "Sign Up" && (
               <p className='login-toggle'>
                 Already have an account? <span onClick={() => setCurrState("Login")}>Login</span>
-              </p>
+              </p> // afing all the rotes in the routes we ar builfing all the schable system in these files
             )}
             {currState === "Login" && (
               <p className='login-toggle'>

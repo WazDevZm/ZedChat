@@ -7,7 +7,7 @@
     justify-content: space-evenly;
 }
 .login .logo{
-    width: max(23vh, 200px);
+    width: max(20vw, 200px); /* ther was an erro in the first apr of this code*/
     
 }
 .header {

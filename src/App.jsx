@@ -12,7 +12,7 @@ const App = () => {
         <Route path="/chat" element={<Chat />} />
         <Route path="/profile-update" element={<ProfileUpdate />} />
       </Routes>
-    </>
+    </>// ading all the roe
   )
 }
 
