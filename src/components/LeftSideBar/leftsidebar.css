@@ -1,111 +1,72 @@
-.ls-container {
-  width: 300px;
-  height: 100vh;
-  background-color: #ffffff;
-  border-right: 1px solid #e5e7eb;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
+.ls{
+  background-color: #001030;
+  color: white;
+  height: 75vh;
 }
-
-.ls {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.ls-top{
+  padding: 20px;
 }
-
-.ls-top {
-  padding-bottom: 16px;
-  border-bottom: 1px solid #e5e7eb;
-}
-
 .ls-nav {
-  display: flex;
+  display:flex;
   justify-content: space-between;
   align-items: center;
 }
+.ls-nav .logo {
+  max-width: 140px;
 
-.logo {
-  height: 32px;
-  width: auto;
 }
-
-.menu img {
-  width: 24px;
-  height: 24px;
+.ls-nav .menu img {
+  max-height: 20px;
+  opacity:  0.6;
   cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.2s;
-}
-
-.menu img:hover {
-  opacity: 1;
 }
 
 .ls-search {
+  background-color: #002670;
   display: flex;
-  align-items: center;
-  background-color: #f3f4f6;
-  padding: 8px 12px;
-  border-radius: 8px;
-  gap: 8px;
+  align-items:center;
+  gap: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
 }
-
-.ls-search img {
-  width: 20px;
-  height: 20px;
-  opacity: 0.5;
+.ls-search img{
+  width: 16px;
 }
-
-.ls-search input {
+.ls-search input{
+  background: transparent;
   border: none;
-  background: none;
   outline: none;
-  width: 100%;
-  font-size: 14px;
-  color: #374151;
+  color: white;
+  font-size: 11px;
 }
-
-.ls-search input::placeholder {
-  color: #9ca3af;
+.ls-search input::placeholder{
+  color: #c8c8c8;
 }
-
-.friends {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.friends:hover {
-  background-color: #f3f4f6;
-}
-
-.friends img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.friends div {
+.ls-list{
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  height: 70%;
+  overflow-y: scroll;
 }
-
-.friends p {
-  font-size: 14px;
-  font-weight: 500;
-  color: #1f2937;
-  margin: 0;
+.friends img {
+  width: 35px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
 }
-
+.friends{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.friends div{
+  display: flex;
+  flex-direction: column;
+}
 .friends span {
-  font-size: 12px;
-  color: #6b7280;
-  margin: 0;
+  color: #9f9f9f;
+  font-size: 11px;
+
 }
