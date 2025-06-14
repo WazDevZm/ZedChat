@@ -70,3 +70,10 @@
   font-size: 11px;
 
 }
+.friends :hover{
+  background-color: #077Eff;
+  
+}
+.friends :hover span{
+  color: white;
+}
