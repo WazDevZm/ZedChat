@@ -2,7 +2,7 @@ import React from 'react'
 import assets from '../../assets/assets.js'
 import './leftsidebar.css'
 
-const leftsidebar = () => {
+const Leftsidebar = () => {
   return (
     <div className='ls-container'>
       <div className='ls'>
@@ -18,18 +18,19 @@ const leftsidebar = () => {
           <img src={assets.search_icon} alt="" />
           <input type="text" placeholder='Search here..' />
         </div>
-      </div>
-      <div className='ls-list'>
-      <div className='friends'>
-        <img src={assets.profile_img} alt="" />
-        <div>
-          <p>Wazingwa Mugala</p>
-          <span>Hello, How are you?</span>
+        <div className='ls-list'>
+          <div className='friends'>
+            <img src={assets.profile_img} alt="" />
+            <div>
+              <p>John Doe</p>
+              <span>Hello, How are you?</span>
+            </div>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   )
-}
+}// removed use profile from the chat list, list of members in the call
 
-export default leftsidebar
+
+export default Leftsidebar
