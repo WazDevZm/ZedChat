@@ -21,9 +21,9 @@ const Leftsidebar = () => {
         <div className='ls-list'>
             {Array(12).fill("").map(()=>(
               <div className='friends'>
-              <img src={assets.profile_img} alt="" />
+              <img src={assets.waz} alt="" />
             <div>
-              <p>John Doe</p>
+              <p>Mike M</p>
               <span>Hello, How are you?</span>
 
           
@@ -32,9 +32,9 @@ const Leftsidebar = () => {
           ))}
         </div>
       </div>
-    </div>
+    </div>// BUILDING
   )
 }// removed use profile from the chat list, list of members in the call
 
-
+// wehen is ti dones,
 export default Leftsidebar
