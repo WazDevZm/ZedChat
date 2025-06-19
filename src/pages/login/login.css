@@ -7,7 +7,7 @@
     justify-content: space-evenly;
 }
 .login .logo{
-    width: max(20vw, 200px); /* ther was an erro in the first apr of this code*/
+    width: max(23vh, 200px);
     
 }
 .header {
@@ -74,7 +74,5 @@
     font-weight: 600;
     color: #077EFF;
     cursor: pointer;
+    
 }
- /* we adding ckmen to the code to ensure that we are building all the correct tech stach we are building to beomce web developers we arew 
- */
- 

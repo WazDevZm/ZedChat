@@ -85,3 +85,16 @@ justify-content: start;
     border-radius: 8px 8px 0px 8px;
     margin-bottom: 30px;
 }
+.r-msg .msg{
+    background-color: #9b9a9a;
+    border-radius: 8px 8px 8px 0px;
+}
+.s-msg div, .r-msg div{
+    text-align: center;
+    font-size: 9px;
+}
+.msg-img{
+    max-width: 230px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
