@@ -1,79 +1,114 @@
-.ls{
+.ls {
   background-color: #001030;
   color: white;
   height: 75vh;
+  display: flex;
+  flex-direction: column;
 }
-.ls-top{
+
+.ls-top {
   padding: 20px;
 }
+
 .ls-nav {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .ls-nav .logo {
   max-width: 140px;
-
 }
+
 .ls-nav .menu img {
   max-height: 20px;
-  opacity:  0.6;
+  opacity: 0.6;
   cursor: pointer;
 }
 
 .ls-search {
   background-color: #002670;
   display: flex;
-  align-items:center;
+  align-items: center;
   gap: 10px;
   padding: 10px 20px;
   margin-top: 20px;
 }
-.ls-search img{
+
+.ls-search img {
   width: 16px;
 }
-.ls-search input{
+
+.ls-search input {
   background: transparent;
   border: none;
   outline: none;
   color: white;
-  font-size: 11px;
+  font-size: 13px;
+  flex: 1;
 }
-.ls-search input::placeholder{
+
+.ls-search input::placeholder {
   color: #c8c8c8;
 }
-.ls-list{
+
+.ls-list {
   display: flex;
   flex-direction: column;
   height: 70%;
-  overflow-y: scroll;
+  overflow-y: auto;
+  margin-top: 10px;
 }
-.friends img {
-  width: 35px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-}
-.friends{
+
+.friends {
   display: flex;
   align-items: center;
-  gap:10px;
-  padding: 10px 20px;
+  gap: 16px;
+  padding: 12px 24px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 15px;
+  transition: background 0.2s;
+  border-radius: 8px;
 }
-.friends div{
+
+.friends img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.friends div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  min-width: 0;
 }
-.friends span {
-  color: #9f9f9f;
-  font-size: 11px;
 
+.friends p {
+  margin: 0;
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.friends :hover{
-  background-color: #077Eff;
-  
+
+.friends span {
+  color: #b0b0b0;
+  font-size: 12px;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.friends :hover span{
-  color: white;
+
+.friends:hover {
+  background-color: #077eff;
+}
+
+.friends:hover span {
+  color: #fff;
 }
