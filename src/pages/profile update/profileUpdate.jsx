@@ -12,3 +12,5 @@ export default profileUpdate
 
 // ad feature to show users online(status)
 // add the routings
+
+// add some files to te routes
