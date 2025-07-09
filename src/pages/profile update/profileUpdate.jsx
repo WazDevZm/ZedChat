@@ -14,3 +14,4 @@ export default profileUpdate
 // add the routings
 
 // add some files to te routes
+// include a many routes in the app.js file
