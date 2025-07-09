@@ -4,37 +4,33 @@ import './leftsidebar.css'
 
 const Leftsidebar = () => {
   return (
-    <div className='ls-container'>
-      <div className='ls'>
-        <div className='ls-top'>
-          <div className='ls-nav'>
-            <img src={assets.logo} className='logo' alt="" />
-            <div className='menu'>
-              <img src={assets.menu_icon} alt="" />
-            </div>
+    <aside className='ls'>
+      <div className='ls-top'>
+        <div className='ls-nav'>
+          <img src={assets.logo} className='logo' alt="ZedChat Logo" />
+          <div className='menu'>
+            <img src={assets.menu_icon} alt="Menu" />
           </div>
         </div>
-        <div className='ls-search'>
-          <img src={assets.search_icon} alt="" />
-          <input type="text" placeholder='Search here..' />
-        </div>
-        <div className='ls-list'>
-            {Array(12).fill("").map(()=>(
-              <div className='friends'>
-              <img src={assets.waz} alt="" />
+      </div>
+      <div className='ls-search'>
+        <img src={assets.search_icon} alt="Search" />
+        <input type="text" placeholder='Search here..' />
+      </div>
+      <div className='ls-list'>
+        {Array(12).fill("").map((_, idx) => (
+          <div className='friends' key={idx}>
+            <img src={assets.waz} alt="Profile" />
             <div>
               <p>Mike M</p>
               <span>Hello, How are you?</span>
-
-          
             </div>
           </div>
-          ))}
-        </div>
+        ))}
       </div>
-    </div>// BUILDING
+    </aside>
   )
-}// removed use profile from the chat list, list of members in the call
+}
 
-// wehen is ti dones,
 export default Leftsidebar
+// removed use profile from the chat list, list of members in the call
