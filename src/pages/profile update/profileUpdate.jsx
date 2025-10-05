@@ -1,17 +1,111 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useAuth } from '../../contexts/AuthContext'
+import { useNavigate } from 'react-router-dom'
 import "./profileUpdate.css"
-const profileUpdate = () => {
+import assets from '../../assets/assets'
+
+const ProfileUpdate = () => {
+  const { user, logout } = useAuth()
+  const navigate = useNavigate()
+  const [formData, setFormData] = useState({
+    username: user?.username || '',
+    email: user?.email || '',
+    bio: user?.bio || ''
+  })
+  const [loading, setLoading] = useState(false)
+  const [message, setMessage] = useState('')
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+    setMessage('Profile updated successfully!')
+    setTimeout(() => {
+      setLoading(false)
+      setMessage('')
+    }, 2000)
+  }
+
+  const handleLogout = () => {
+    logout()
+    navigate('/')
+  }
+
   return (
-    <div>
-      we on the prfile page
+    <div className='profile-update'>
+      <div className='profile-container'>
+        <div className='profile-header'>
+          <img src={user?.avatar || assets.waz} alt="Profile" className='profile-avatar' />
+          <h2>{user?.username || 'User'}</h2>
+          <p>{user?.email || 'user@example.com'}</p>
+        </div>
+
+        <form className='profile-form' onSubmit={handleSubmit}>
+          <h3>Update Profile</h3>
+          
+          {message && (
+            <div className='success-message'>
+              {message}
+            </div>
+          )}
+
+          <div className='form-group'>
+            <label htmlFor='username'>Username</label>
+            <input
+              type='text'
+              id='username'
+              name='username'
+              value={formData.username}
+              onChange={handleChange}
+              placeholder='Enter your username'
+            />
+          </div>
+
+          <div className='form-group'>
+            <label htmlFor='email'>Email</label>
+            <input
+              type='email'
+              id='email'
+              name='email'
+              value={formData.email}
+              onChange={handleChange}
+              placeholder='Enter your email'
+            />
+          </div>
+
+          <div className='form-group'>
+            <label htmlFor='bio'>Bio</label>
+            <textarea
+              id='bio'
+              name='bio'
+              value={formData.bio}
+              onChange={handleChange}
+              placeholder='Tell us about yourself...'
+              rows={4}
+            />
+          </div>
+
+          <div className='form-actions'>
+            <button type='submit' disabled={loading}>
+              {loading ? 'Updating...' : 'Update Profile'}
+            </button>
+            <button type='button' onClick={() => navigate('/chat')} className='back-btn'>
+              Back to Chat
+            </button>
+            <button type='button' onClick={handleLogout} className='logout-btn'>
+              Logout
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   )
-} // we continue adding and despltyinh some more code in the chat ap
-// add scalable code here all in-line functions to be dfined correclty as expected all:
-export default profileUpdate
+}
 
-// ad feature to show users online(status)
-// add the routings
-
-// add some files to te routes
-// include a many routes in the app.js file
+export default ProfileUpdate
